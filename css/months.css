@@ -1,0 +1,212 @@
+header h2 {
+    text-align: left;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+#top-photos-container {
+    margin: auto;
+    width: 1200px;
+    height: 600px;
+    border: 10px solid black;
+    border-radius: 5px;
+    background-image: url('../images/cork.jpg');
+    box-shadow: 0 6px 12px 0 #00000033, 0 9px 30px 0 #00000030;
+    position: relative;
+}
+
+#top-photos-container h4 {
+    font-size: 120px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+
+#photo1,
+#photo2,
+#photo3,
+#photo4,
+#photo5,
+#photo6,
+#photo7,
+#photo8,
+#photo9,
+#photo10 {/*sets all of the shared data within the photos in order to clean up code*/
+    position: absolute;
+    border-bottom: 30px;
+    border-top: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-color: aliceblue;
+    border-style: solid;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/*these all set the hard location of each image*/
+#photo1 {
+    top: 50px;
+    left: 25px;
+}
+
+#photo2 {
+    top: 50px;
+    left: 258px;
+}
+
+#photo3 {
+    top: 50px;
+    left: 490px;
+}
+
+#photo4 {
+    top: 50px;
+    right: 258px;
+}
+
+#photo5 {
+    top: 50px;
+    right: 25px;
+}
+
+#photo6 {
+    bottom: 50px;
+    left: 25px;
+}
+
+#photo7 {
+    bottom: 50px;
+    left: 258px;
+}
+
+#photo8 {
+    bottom: 50px;
+    left: 490px;
+}
+
+#photo9 {
+    bottom: 50px;
+    right: 258px;
+}
+
+#photo10 {
+    bottom: 50px;
+    right: 25px;
+}
+
+/*formats the next and previous month buttons*/
+#prev-month a,
+#next-month a {
+    border: 3px solid aliceblue;
+    background-image: url("../images/banner.jpg");
+    padding: 6px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    position: fixed;
+}
+/*sets locations of buttons*/
+#prev-month a {
+    left: 10px;
+    bottom: 10px;
+}
+
+#next-month a {
+    right: 10px;
+    bottom: 10px;
+}
+/*sets the hover behaviour of the next and previous buttons*/
+#prev-month a:hover,
+#next-month a:hover {
+    color: aliceblue;
+    background-image: none;
+}
+
+/*does all of the same as above just at a smaller width screen*/
+@media(max-width:1200px) {
+    #top-photos-container {
+        margin: auto;
+        max-width: 600px;
+        min-height: 1290px;
+        border: 10px solid black;
+        background-image: url('../images/cork.jpg');
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+    }
+
+    #photo1,
+    #photo2,
+    #photo3,
+    #photo4,
+    #photo5,
+    #photo6,
+    #photo7,
+    #photo8,
+    #photo9,
+    #photo10 {
+        position: absolute;
+        border-bottom: 30px;
+        border-top: 10px;
+        border-left: 10px;
+        border-right: 10px;
+        border-color: aliceblue;
+        border-style: solid;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #photo1 {
+        top: 25px;
+        left: 50px;
+    }
+
+    #photo2 {
+        top: 25px;
+        left: 330px;
+    }
+
+    #photo3 {
+        top: 275px;
+        left: 50px;
+    }
+
+    #photo4 {
+        top: 275px;
+        left: 330px;
+    }
+
+    #photo5 {
+        top: 525px;
+        left: 50px;
+    }
+
+    #photo6 {
+        top: 525px;
+        left: 330px;
+    }
+
+    #photo7 {
+        top: 775px;
+        left: 50px;
+    }
+
+    #photo8 {
+        top: 775px;
+        left: 330px;
+    }
+
+    #photo9 {
+        top: 1025px;
+        left: 50px;
+    }
+
+    #photo10 {
+        top: 1025px;
+        left: 330px;
+    }
+
+}
